@@ -33,14 +33,14 @@ class HomeActivity : AppCompatActivity() {
             if (it.isSuccessful) {
                 userData = UserData(
                     it.result.child("uid").value.toString(),
-                    it.result.child("name").value.toString(),
                     it.result.child("email").value.toString(),
+                    it.result.child("name").value.toString(),
                     it.result.child("age").value.toString().toInt()
                 )
 
                 txtUser.text = userData.name
                 findViewById<EditText>(R.id.edtUpdateName).setText(userData.name)
-                findViewById<EditText>(R.id.edtUpdateAge).setText(userData.age)
+                findViewById<EditText>(R.id.edtUpdateAge).setText(userData.age.toString())
             } else {
                 txtUser.text = "Erro ao obter os dados do usuário"
                 Log.d("PDM", it.result.toString())
