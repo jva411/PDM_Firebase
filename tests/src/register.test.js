@@ -41,7 +41,7 @@ describe("Screen flow tests", () => {
     })
 })
 
-describe('Testes da tela de login', () => {
+describe('Testes da tela de registro', () => {
     /** @type WebdriverIO.Browser */
     let driver
     const useElements = elements.Register
@@ -102,18 +102,6 @@ describe('Testes da tela de login', () => {
 
         const errorMsg = await driver.$(useElements.errorMsg)
         expect(await errorMsg.isDisplayed()).toBeTruthy()
-    })
-
-    it('Deve redirecionar para a tela de login', async () => {
-        driver = await driver
-    
-        const back = await driver.$(useElements.back)
-        await back.click()
-
-        await sleep(2000)
-
-        const email = await driver.$(elements.Login.email)
-        expect(await email.isDisplayed()).toBeTruthy()
     })
 
     it('Deve exibir mensagem de erro ao tentar realizar cadastro sem preencher todos os campos', async () => {

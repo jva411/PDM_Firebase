@@ -10,7 +10,7 @@ global.console = {
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
 
-describe.skip('Testes da tela de login', () => {
+describe('Testes da tela de login', () => {
     /** @type WebdriverIO.Browser */
     let driver
     const useElements = elements.Login
