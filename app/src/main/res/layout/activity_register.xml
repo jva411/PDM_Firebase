@@ -4,7 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    tools:layout_editor_absoluteX="166dp"
+    tools:layout_editor_absoluteY="413dp">
+
+    <TextView
+        android:id="@+id/tvRegisterErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Erro ao tentar criar o seu usuário"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/edtNewAge"
+        app:layout_constraintTop_toBottomOf="@+id/edtNewAge" />
 
     <Button
         android:id="@+id/btnRegister"

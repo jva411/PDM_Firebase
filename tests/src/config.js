@@ -19,7 +19,7 @@ const elements = {
         "password": '//android.widget.EditText[@resource-id="com.example.firebase:id/edtSenha"]',
         "login": '//android.widget.Button[@resource-id="com.example.firebase:id/btnLogin"]',
         "register": '//android.widget.Button[@resource-id="com.example.firebase:id/btnRegisterRedirect"]',
-        "errorMsg": '//android.widget.TextView[@resource-id="com.example.firebase:id/tvLoginErrorMessage"]',
+        "errorMsg": '//android.widget.TextView[@resource-id="com.example.firebase:id/tvLoginErrorMessage"]'
     },
     "Register": {
         "email": '//android.widget.EditText[@resource-id="com.example.firebase:id/edtNewEmail"]',
@@ -27,7 +27,8 @@ const elements = {
         "password": '//android.widget.EditText[@resource-id="com.example.firebase:id/edtNewSenha"]',
         "age": '//android.widget.EditText[@resource-id="com.example.firebase:id/edtNewAge"]',
         "register": '//android.widget.Button[@resource-id="com.example.firebase:id/btnRegister"]',
-        "back": '//android.widget.Button[@resource-id="com.example.firebase:id/btnBackToLogin"]'
+        "back": '//android.widget.Button[@resource-id="com.example.firebase:id/btnBackToLogin"]',
+        "errorMsg": '//android.widget.TextView[@resource-id="com.example.firebase:id/tvRegisterErrorMessage"]'
     },
     "Homepage": {
         "title": '//android.widget.TextView[@resource-id="com.example.firebase:id/tvUserName"]',
