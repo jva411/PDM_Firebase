@@ -1,0 +1,19 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "appium": "appium",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "dependencies": {
+    "appium": "^2.2.2",
+    "jest": "^29.7.0",
+    "webdriverio": "^8.23.1"
+  },
+  "devDependencies": {
+    "appium-uiautomator2-driver": "^2.34.1",
+    "cross-env": "^7.0.3"
+  }
+}

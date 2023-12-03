@@ -14,13 +14,16 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity: AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
+    private lateinit var tvErrorMessage: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         auth = FirebaseAuth.getInstance()
+        tvErrorMessage = findViewById(R.id.tvLoginErrorMessage)
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
+            tvErrorMessage.visibility = View.INVISIBLE
             logar(it)
         }
         findViewById<Button>(R.id.btnRegisterRedirect).setOnClickListener {
@@ -58,6 +61,7 @@ class MainActivity: AppCompatActivity() {
                         "Problemas na Autenticação.",
                         Toast.LENGTH_SHORT,
                     ).show()
+                    tvErrorMessage.visibility = View.VISIBLE
                 }
             }
     }

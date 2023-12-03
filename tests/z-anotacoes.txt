@@ -1,0 +1,5 @@
+criar pasta para testes
+npm init
+npm install appium webdriverio
+criar script pra rodar o appium
+npm run appium driver install uiautomator2
